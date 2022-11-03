@@ -54,8 +54,9 @@ const Settings = () => {
 
   return (
     <ThemeProvider theme={theme}>
-    <form onSubmit={handleSubmit}>
       <CssBaseline />
+    <form onSubmit={handleSubmit}>
+      
       <SelectField options={response.trivia_categories} label="Category" />
       <SelectField options={difficultyOptions} label="Difficulty" />
       <SelectField options={typeOptions} label="Type" />
