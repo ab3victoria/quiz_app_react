@@ -1,11 +1,9 @@
-import { Button, CircularProgress, CssBaseline, Typography } from "@mui/material";
+import { Button, CircularProgress, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { useNavigate } from "react-router-dom";
 import SelectField from "../components/SelectField";
 import TextFieldComp from "../components/TextFieldComp";
 import useAxios from "../hooks/useAxios";
-import { orange } from "@mui/material/colors";
-import { createTheme,ThemeProvider } from "@mui/material";
 
 
 const Settings = () => {
@@ -43,18 +41,10 @@ const Settings = () => {
     e.preventDefault();
     navigate("/questions");
   };
-    const theme = createTheme({
-    palette: {
-      mode:"dark",
-      primary: {
-        main: orange[500]
-      }
-    }
-  })
+   
 
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
+  
     <form onSubmit={handleSubmit}>
       
       <SelectField options={response.trivia_categories} label="Category" />
@@ -67,7 +57,6 @@ const Settings = () => {
         </Button>
       </Box>
     </form>
-    </ThemeProvider>
   );
 };
 

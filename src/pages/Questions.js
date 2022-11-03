@@ -1,4 +1,4 @@
-import { Button, CircularProgress, createTheme, CssBaseline, ThemeProvider, Typography } from "@mui/material";
+import { Button, CircularProgress, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { decode } from "html-entities";
 import { useEffect, useState } from "react";
@@ -7,7 +7,6 @@ import { useSelector } from "react-redux";
 import { useNavigate } from "react-router";
 import useAxios from "../hooks/useAxios";
 import { handleScoreChange } from "../redux/actions";
-import { orange } from "@mui/material/colors";
 
 const getRandomInt = (max) => {
   return Math.floor(Math.random() * Math.floor(max));
@@ -73,18 +72,10 @@ const Questions = () => {
     }
   };
 
-  const theme = createTheme({
-    palette: {
-      mode:"dark",
-      primary: {
-        main: orange[500]
-      }
-    }
-  })
+  
 
   return (
-    <ThemeProvider theme={theme}>
-<CssBaseline/>
+
     <Box>
       <Typography variant="h4">Questions {questionIndex + 1}</Typography>
       <Typography mt={5}>
@@ -101,7 +92,6 @@ const Questions = () => {
         Score: {score} / {response.results.length}
       </Box>
     </Box>
-      </ThemeProvider>
   );
 };
 
