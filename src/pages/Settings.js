@@ -1,9 +1,12 @@
-import { Button, CircularProgress, Typography } from "@mui/material";
+import { Button, CircularProgress, CssBaseline, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { useNavigate } from "react-router-dom";
 import SelectField from "../components/SelectField";
 import TextFieldComp from "../components/TextFieldComp";
 import useAxios from "../hooks/useAxios";
+import { orange } from "@mui/material/colors";
+import { createTheme,ThemeProvider } from "@mui/material";
+
 
 const Settings = () => {
   const { response, error, loading } = useAxios({ url: "/api_category.php" });
@@ -11,7 +14,7 @@ const Settings = () => {
 
   if (loading) {
     return (
-      <Box mt={20}>
+      <Box  mt={20}>
         <CircularProgress />
       </Box>
     );
@@ -40,9 +43,19 @@ const Settings = () => {
     e.preventDefault();
     navigate("/questions");
   };
+    const theme = createTheme({
+    palette: {
+      mode:"dark",
+      primary: {
+        main: orange[500]
+      }
+    }
+  })
 
   return (
+    <ThemeProvider theme={theme}>
     <form onSubmit={handleSubmit}>
+      <CssBaseline />
       <SelectField options={response.trivia_categories} label="Category" />
       <SelectField options={difficultyOptions} label="Difficulty" />
       <SelectField options={typeOptions} label="Type" />
@@ -53,6 +66,7 @@ const Settings = () => {
         </Button>
       </Box>
     </form>
+    </ThemeProvider>
   );
 };
 

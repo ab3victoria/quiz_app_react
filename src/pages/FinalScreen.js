@@ -1,4 +1,5 @@
-import { Button, Typography } from "@mui/material";
+import { Button, createTheme, CssBaseline, ThemeProvider, Typography } from "@mui/material";
+import { orange } from "@mui/material/colors";
 import { Box } from "@mui/system";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
@@ -13,10 +14,23 @@ const FinalScreen = () => {
   const handleBackToSettings = () => {
     disptach(handleScoreChange(0));
     disptach(handleAmountChange(50));
-    navigate('/questions');
+    navigate('/');
   };
 
+  const theme = createTheme({
+    palette: {
+      mode:"dark",
+      primary: {
+        main: orange[500]
+      }
+    }
+  })
+
+ 
+    
   return (
+    <ThemeProvider theme={theme}>
+<CssBaseline/>
     <Box mt={30}>
       <Typography variant="h3" fontWeight="bold" mb={3}>
         Final Score {score}
@@ -25,6 +39,7 @@ const FinalScreen = () => {
         back to settings!
       </Button>
     </Box>
+    </ThemeProvider>
   );
 };
 

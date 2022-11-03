@@ -1,23 +1,25 @@
-import { Button, CircularProgress, Typography } from "@mui/material";
+import { createTheme, ThemeProvider, Typography } from "@mui/material";
 import { Box } from "@mui/system";
-import { decode } from "html-entities";
-import { useEffect, useState } from "react";
-import { useDispatch } from "react-redux";
-import { useSelector } from "react-redux";
-import { useNavigate } from "react-router";
-import useAxios from "../hooks/useAxios";
-import { handleScoreChange } from "../redux/actions";
-
+import { orange } from "@mui/material/colors";
 
 
 const Header = () => {
   
-
+  const theme = createTheme({
+    palette: {
+      mode:"dark",
+      primary: {
+        main: orange[500]
+      }
+    }
+  })
   return (
+    <ThemeProvider theme={theme}>
     <Box>
-      <Typography variant="h4">Trivia Game </Typography>
+      <Typography variant="h2" color="primary">Trivia Game </Typography>
       
     </Box>
+    </ThemeProvider>
   );
 };
 
