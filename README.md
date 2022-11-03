@@ -8,7 +8,7 @@ User can choose the number of questions presented, difficulty and type of questi
 ## Screenshots
 *Settings Page*
 
-![https://i.postimg.cc/Jzg8LkyW/place-Order.png]([https://i.postimg.cc/WqNzhWZw/triviaimg.png](https://i.postimg.cc/kGXSPZmJ/triviaimg.png))
+![https://i.postimg.cc/Jzg8LkyW/place-Order.png](https://i.postimg.cc/kGXSPZmJ/triviaimg.png)
 
 
 Questions
