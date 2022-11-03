@@ -13,12 +13,12 @@ User can choose the number of questions presented, difficulty and type of questi
 
 Questions
 
-![https://i.postimg.cc/Jzg8LkyW/place-Order.png](https://i.postimg.cc/ZqXZSyzC/questions.png)
+![pic](https://i.postimg.cc/ZqXZSyzC/questions.png)
 
 
 Result Page
 
-![https://i.postimg.cc/Jzg8LkyW/place-Order.png](https://i.postimg.cc/NF4W5KS8/finalscore.png)
+![pic](https://i.postimg.cc/NF4W5KS8/finalscore.png)
 
 
 ## Deployment
