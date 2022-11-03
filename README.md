@@ -11,12 +11,12 @@ User can choose the number of questions presented, difficulty and type of questi
 ![https://i.postimg.cc/Jzg8LkyW/place-Order.png](https://i.postimg.cc/kGXSPZmJ/triviaimg.png)
 
 
-*Questions
+*Questions*
 
 ![pic](https://i.postimg.cc/ZqXZSyzC/questions.png)
 
 
-*Result Page
+*Result Page*
 
 ![pic](https://i.postimg.cc/NF4W5KS8/finalscore.png)
 
