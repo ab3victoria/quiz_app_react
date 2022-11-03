@@ -7,14 +7,18 @@ User can choose the number of questions presented, difficulty and type of questi
 
 ## Screenshots
 Settings Page 
-![https://i.postimg.cc/Jzg8LkyW/place-Order.png](https://i.postimg.cc/s1sv6XLG/finalscore.png)
 
-Questions
-![https://i.postimg.cc/Jzg8LkyW/place-Order.png](https://i.postimg.cc/B8FXy1sH/questions.png)
-
-Result Page
 ![https://i.postimg.cc/Jzg8LkyW/place-Order.png](https://i.postimg.cc/WqNzhWZw/triviaimg.png)
 
+
+Questions
+
+![https://i.postimg.cc/Jzg8LkyW/place-Order.png](https://i.postimg.cc/B8FXy1sH/questions.png)
+
+
+Result Page
+
+![https://i.postimg.cc/Jzg8LkyW/place-Order.png](https://i.postimg.cc/s1sv6XLG/finalscore.png)
 
 
 ## Deployment
